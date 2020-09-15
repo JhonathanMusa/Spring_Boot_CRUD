@@ -134,6 +134,7 @@ header {
   color: #999;
   padding: 5px;
   width: calc(100% - 10px);
+  height: 34px;
 }
 .detail-price {
   text-align: center;
