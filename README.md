@@ -1,2 +1,2 @@
-# ecommerce_php
-E-commerce with php and mysql
+# spring_boot_java
+Simple Java Spring Boot price
