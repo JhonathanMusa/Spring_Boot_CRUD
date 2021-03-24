@@ -23,8 +23,21 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public Optional<UserModel> getUserById(Long id) {
+    public Optional<UserModel> getById(Long id) {
         return userRepository.findById(id);
+    }
+
+    public ArrayList<UserModel> getByPriority(Integer priority) {
+        return userRepository.findByPriority(priority);
+    }
+
+    public boolean deleteUser(Long id) {
+        try {
+            userRepository.deleteById(id);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }
